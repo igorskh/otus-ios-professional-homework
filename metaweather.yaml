@@ -1,0 +1,75 @@
+openapi: 3.0.3
+info:
+  title: metaweather
+  description: metaweather.com
+  version: 1.0.0
+servers:
+- url: https://www.metaweather.com/api/
+tags:
+- name: weather
+  description: weather
+paths:
+  /location/search/:
+    get:
+      tags:
+      - weather search
+      summary: Weather Search
+      operationId: weatherSearch
+      parameters:
+      - name: query
+        in: query
+        description: search query
+        required: false
+        example: "san"
+        schema:
+          type: string
+      - name: lattlong
+        in: query
+        description: Latitude longitude
+        required: false
+        schema:
+          type: array
+          items:
+            type: number
+          minItems: 2
+          maxItems: 2
+        explode: false
+        style: form
+        example: [36.96,-122.02]
+      responses:
+        "200":
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LocationList'
+        default:
+          description: enexpected error
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: pong
+components:
+  schemas:
+    LocationList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Location'
+    Location:
+      required:
+      - title
+      - woeid
+      - latt_long
+      type: object
+      properties:
+        distance:
+          type: number
+        title:
+          type: string
+        woeid:
+          type: integer
+        location_type:
+          type: string
+        latt_long:
+          type: string
