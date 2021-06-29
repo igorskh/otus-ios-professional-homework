@@ -12,6 +12,8 @@ struct otus_ios_homework1App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(Router())
+                .environmentObject(MetaWeatherViewController())
         }
     }
 }
