@@ -14,9 +14,13 @@ struct CityListScreen: View {
     var body: some View {
         NavigationView {
             VStack {
-                TextField("Query", text: $metaWeather.searchQuery)
-                    .padding(.horizontal, 25)
+                TextField("Search Query", text: $metaWeather.searchQuery)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding(.horizontal)
                 
+                if (metaWeather.locations.isEmpty) {
+                    Text("Nothing found")
+                }
                 List {
                     ForEach(metaWeather.locations) { item in
                         NavigationLink(
