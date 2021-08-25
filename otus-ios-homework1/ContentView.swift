@@ -26,12 +26,20 @@ struct ContentView: View {
                 }
                 .tag(1)
             
+            
+            NewsListScreen()
+                .tabItem {
+                    Image(systemName: "newspaper")
+                    Text("News")
+                }
+                .tag(2)
+            
             AboutScreen()
                 .tabItem {
                     Image(systemName: "info.circle")
                     Text("About")
                 }
-                .tag(2)
+                .tag(3)
         }
     }
 }
