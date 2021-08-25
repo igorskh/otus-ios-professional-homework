@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NowScreen: View {
     @EnvironmentObject var router: Router
-    @EnvironmentObject var metaWeather: MetaWeatherViewController
+    @EnvironmentObject var metaWeather: MetaWeatherViewModel
     
     var body: some View {
         NavigationView {
