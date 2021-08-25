@@ -13,7 +13,8 @@ struct otus_ios_homework1App: App {
         WindowGroup {
             ContentView()
                 .environmentObject(Router())
-                .environmentObject(MetaWeatherViewController())
+                .environmentObject(MetaWeatherViewModel())
+                .environmentObject(NewsAPIViewModel())
         }
     }
 }
