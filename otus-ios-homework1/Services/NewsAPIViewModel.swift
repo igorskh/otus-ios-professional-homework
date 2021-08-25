@@ -62,9 +62,16 @@ class NewsAPIViewModel: ObservableObject {
                               language: queryParams.language,
                               page: page,
                               pageSize: pageSize) { list, error in
-            
+            defer {
+                self.isPageLoading = false
+            }
             if let error = error {
-                self.lastError = error.localizedDescription
+                
+                if  case let .error(status, _, _, error) = error as? ErrorResponse {
+                    self.lastError = "\(status) \(error)"
+                } else {
+                    self.lastError = error.localizedDescription
+                }
                 return
             }
             
@@ -78,7 +85,6 @@ class NewsAPIViewModel: ObservableObject {
             } ?? []
             
             self.articles.append(contentsOf: displayArticles)
-            self.isPageLoading = false
         }
     }
     
