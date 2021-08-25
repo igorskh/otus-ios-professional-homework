@@ -1,14 +1,14 @@
 //
-//  MetaWeatherViewController.swift
+//  MetaWeatherViewModel.swift
 //  otus-ios-homework1
 //
 //  Created by Igor Kim on 23.06.21.
 //
 
 import Foundation
-import Networking
+import MetaweatherAPI
 
-class MetaWeatherViewController: ObservableObject {
+class MetaWeatherViewModel: ObservableObject {
     @Published var locations: [Location] = []
     @Published var searchQuery: String = "" {
         didSet {
