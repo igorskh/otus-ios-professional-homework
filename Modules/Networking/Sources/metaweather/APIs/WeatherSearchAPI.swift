@@ -6,8 +6,12 @@
 //
 
 import Foundation
+#if canImport(AnyCodable)
+import AnyCodable
+#endif
 
 open class WeatherSearchAPI {
+
     /**
      Weather Search
      
@@ -16,7 +20,7 @@ open class WeatherSearchAPI {
      - parameter apiResponseQueue: The queue on which api response is dispatched.
      - parameter completion: completion handler to receive the data and the error objects
      */
-    open class func weatherSearch(query: String? = nil, lattlong: [Double]? = nil, apiResponseQueue: DispatchQueue = OpenAPIClientAPI.apiResponseQueue, completion: @escaping ((_ data: [Location]?, _ error: Error?) -> Void)) {
+    open class func weatherSearch(query: String? = nil, lattlong: [Double]? = nil, apiResponseQueue: DispatchQueue = OpenAPIClient.apiResponseQueue, completion: @escaping ((_ data: [Location]?, _ error: Error?) -> Void)) {
         weatherSearchWithRequestBuilder(query: query, lattlong: lattlong).execute(apiResponseQueue) { result -> Void in
             switch result {
             case let .success(response):
@@ -35,25 +39,24 @@ open class WeatherSearchAPI {
      - returns: RequestBuilder<[Location]> 
      */
     open class func weatherSearchWithRequestBuilder(query: String? = nil, lattlong: [Double]? = nil) -> RequestBuilder<[Location]> {
-        let path = "/location/search/"
-        let URLString = OpenAPIClientAPI.basePath + path
-        let parameters: [String: Any]? = nil
+        let localVariablePath = "/location/search/"
+        let localVariableURLString = OpenAPIClient.basePath + localVariablePath
+        let localVariableParameters: [String: Any]? = nil
 
-        var urlComponents = URLComponents(string: URLString)
-        urlComponents?.queryItems = APIHelper.mapValuesToQueryItems([
+        var localVariableUrlComponents = URLComponents(string: localVariableURLString)
+        localVariableUrlComponents?.queryItems = APIHelper.mapValuesToQueryItems([
             "query": query?.encodeToJSON(),
             "lattlong": lattlong?.encodeToJSON(),
         ])
 
-        let nillableHeaders: [String: Any?] = [
+        let localVariableNillableHeaders: [String: Any?] = [
             :
         ]
 
-        let headerParameters = APIHelper.rejectNilHeaders(nillableHeaders)
+        let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let requestBuilder: RequestBuilder<[Location]>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<[Location]>.Type = OpenAPIClient.requestBuilderFactory.getBuilder()
 
-        return requestBuilder.init(method: "GET", URLString: (urlComponents?.string ?? URLString), parameters: parameters, headers: headerParameters)
+        return localVariableRequestBuilder.init(method: "GET", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters)
     }
-
 }

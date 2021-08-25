@@ -6,10 +6,13 @@
 
 import Foundation
 
-open class OpenAPIClientAPI {
-    public static var basePath = "https://www.metaweather.com/api"
-    public static var credential: URLCredential?
+@available(*, deprecated, renamed: "OpenAPIClient")
+public typealias OpenAPIClientAPI = OpenAPIClient
+
+open class OpenAPIClient {
+    public static var basePath = "https://newsapi.org/v2"
     public static var customHeaders: [String: String] = [:]
+    public static var credential: URLCredential?
     public static var requestBuilderFactory: RequestBuilderFactory = URLSessionRequestBuilderFactory()
     public static var apiResponseQueue: DispatchQueue = .main
 }
@@ -32,7 +35,7 @@ open class RequestBuilder<T> {
         self.parameters = parameters
         self.headers = headers
 
-        addHeaders(OpenAPIClientAPI.customHeaders)
+        addHeaders(OpenAPIClient.customHeaders)
     }
 
     open func addHeaders(_ aHeaders: [String: String]) {
@@ -41,7 +44,7 @@ open class RequestBuilder<T> {
         }
     }
 
-    open func execute(_ apiResponseQueue: DispatchQueue = OpenAPIClientAPI.apiResponseQueue, _ completion: @escaping (_ result: Swift.Result<Response<T>, Error>) -> Void) { }
+    open func execute(_ apiResponseQueue: DispatchQueue = OpenAPIClient.apiResponseQueue, _ completion: @escaping (_ result: Swift.Result<Response<T>, Error>) -> Void) { }
 
     public func addHeader(name: String, value: String) -> Self {
         if !value.isEmpty {
@@ -51,7 +54,7 @@ open class RequestBuilder<T> {
     }
 
     open func addCredential() -> Self {
-        credential = OpenAPIClientAPI.credential
+        credential = OpenAPIClient.credential
         return self
     }
 }
