@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Networking
+import MetaweatherAPI
 import CoreLocation
 
 extension Location {

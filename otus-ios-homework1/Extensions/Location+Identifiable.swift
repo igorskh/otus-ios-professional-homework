@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Networking
+import MetaweatherAPI
 
 extension Location: Identifiable {
     public var id: Int { woeid }
