@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB253F3B26D58C5A00E58891 /* NewsAPIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB253F3A26D58C5A00E58891 /* NewsAPIViewModel.swift */; };
+		CB253F3D26D58FF500E58891 /* MetaweatherAPI in Frameworks */ = {isa = PBXBuildFile; productRef = CB253F3C26D58FF500E58891 /* MetaweatherAPI */; };
+		CB253F3F26D58FF500E58891 /* NewsAPI in Frameworks */ = {isa = PBXBuildFile; productRef = CB253F3E26D58FF500E58891 /* NewsAPI */; };
 		CB316E8A267AB58A00E1E1F4 /* otus_ios_homework1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB316E89267AB58A00E1E1F4 /* otus_ios_homework1App.swift */; };
 		CB316E8C267AB58A00E1E1F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB316E8B267AB58A00E1E1F4 /* ContentView.swift */; };
 		CB316E8E267AB58C00E1E1F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB316E8D267AB58C00E1E1F4 /* Assets.xcassets */; };
@@ -16,16 +19,22 @@
 		CB316E9F267AB71300E1E1F4 /* CityListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB316E9E267AB71300E1E1F4 /* CityListScreen.swift */; };
 		CB316EA1267AB7AB00E1E1F4 /* NowScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB316EA0267AB7AB00E1E1F4 /* NowScreen.swift */; };
 		CB316EA3267AB85400E1E1F4 /* LicensesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB316EA2267AB85400E1E1F4 /* LicensesScreen.swift */; };
+		CB59734326D61F9700BC0BCD /* Article+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59734226D61F9700BC0BCD /* Article+Identifiable.swift */; };
+		CB59734526D6255D00BC0BCD /* NewsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59734426D6255D00BC0BCD /* NewsListScreen.swift */; };
+		CB59734726D6289E00BC0BCD /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59734626D6289E00BC0BCD /* Collection.swift */; };
+		CB59734A26D6626C00BC0BCD /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59734926D6626C00BC0BCD /* NavigationController.swift */; };
+		CB59734E26D667F300BC0BCD /* ArticleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59734D26D667F300BC0BCD /* ArticleCellView.swift */; };
+		CB59735026D6680500BC0BCD /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59734F26D6680500BC0BCD /* ArticleDetailView.swift */; };
+		CB59735226D66A4700BC0BCD /* ArticleMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59735126D66A4700BC0BCD /* ArticleMetaData.swift */; };
 		CB60615C2684E26F00C1526A /* Location+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60615B2684E26F00C1526A /* Location+Identifiable.swift */; };
 		CB60615E2684E5EB00C1526A /* Location+coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60615D2684E5EB00C1526A /* Location+coordinates.swift */; };
-		CB63F06B2684E1E3006F2917 /* AnyCodable in Frameworks */ = {isa = PBXBuildFile; productRef = CB63F06A2684E1E3006F2917 /* AnyCodable */; };
 		CB7B802F26833CF00049123B /* CityDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B802E26833CF00049123B /* CityDetailScreen.swift */; };
-		CB7B80342683453F0049123B /* MetaWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B80332683453F0049123B /* MetaWeatherViewController.swift */; };
+		CB7B80342683453F0049123B /* MetaWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B80332683453F0049123B /* MetaWeatherViewModel.swift */; };
 		CB7B8036268347130049123B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B8035268347130049123B /* MapView.swift */; };
-		CBB1DCB52684E146006E20C0 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = CBB1DCB42684E146006E20C0 /* Networking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB253F3A26D58C5A00E58891 /* NewsAPIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIViewModel.swift; sourceTree = "<group>"; };
 		CB316E86267AB58A00E1E1F4 /* otus-ios-homework1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "otus-ios-homework1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB316E89267AB58A00E1E1F4 /* otus_ios_homework1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otus_ios_homework1App.swift; sourceTree = "<group>"; };
 		CB316E8B267AB58A00E1E1F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,10 +46,17 @@
 		CB316E9E267AB71300E1E1F4 /* CityListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListScreen.swift; sourceTree = "<group>"; };
 		CB316EA0267AB7AB00E1E1F4 /* NowScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowScreen.swift; sourceTree = "<group>"; };
 		CB316EA2267AB85400E1E1F4 /* LicensesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensesScreen.swift; sourceTree = "<group>"; };
+		CB59734226D61F9700BC0BCD /* Article+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Article+Identifiable.swift"; sourceTree = "<group>"; };
+		CB59734426D6255D00BC0BCD /* NewsListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListScreen.swift; sourceTree = "<group>"; };
+		CB59734626D6289E00BC0BCD /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		CB59734926D6626C00BC0BCD /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		CB59734D26D667F300BC0BCD /* ArticleCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCellView.swift; sourceTree = "<group>"; };
+		CB59734F26D6680500BC0BCD /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
+		CB59735126D66A4700BC0BCD /* ArticleMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleMetaData.swift; sourceTree = "<group>"; };
 		CB60615B2684E26F00C1526A /* Location+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+Identifiable.swift"; sourceTree = "<group>"; };
 		CB60615D2684E5EB00C1526A /* Location+coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+coordinates.swift"; sourceTree = "<group>"; };
 		CB7B802E26833CF00049123B /* CityDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailScreen.swift; sourceTree = "<group>"; };
-		CB7B80332683453F0049123B /* MetaWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaWeatherViewController.swift; sourceTree = "<group>"; };
+		CB7B80332683453F0049123B /* MetaWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaWeatherViewModel.swift; sourceTree = "<group>"; };
 		CB7B8035268347130049123B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		CBB1DCB22684E104006E20C0 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = text; name = Networking; path = Modules/Networking; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -50,8 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB63F06B2684E1E3006F2917 /* AnyCodable in Frameworks */,
-				CBB1DCB52684E146006E20C0 /* Networking in Frameworks */,
+				CB253F3F26D58FF500E58891 /* NewsAPI in Frameworks */,
+				CB253F3D26D58FF500E58891 /* MetaweatherAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +94,9 @@
 		CB316E88267AB58A00E1E1F4 /* otus-ios-homework1 */ = {
 			isa = PBXGroup;
 			children = (
+				CB59734C26D667DF00BC0BCD /* Weather */,
+				CB59734B26D667C800BC0BCD /* News */,
+				CB59734826D661DC00BC0BCD /* Components */,
 				CBB1DCB22684E104006E20C0 /* Networking */,
 				CB60615A2684E25200C1526A /* Extensions */,
 				CB316E98267AB59300E1E1F4 /* Services */,
@@ -87,11 +106,8 @@
 				CB316E92267AB58C00E1E1F4 /* Info.plist */,
 				CB316E8F267AB58C00E1E1F4 /* Preview Content */,
 				CB316E9B267AB5D700E1E1F4 /* AboutScreen.swift */,
-				CB316E9E267AB71300E1E1F4 /* CityListScreen.swift */,
 				CB316EA0267AB7AB00E1E1F4 /* NowScreen.swift */,
 				CB316EA2267AB85400E1E1F4 /* LicensesScreen.swift */,
-				CB7B802E26833CF00049123B /* CityDetailScreen.swift */,
-				CB7B8035268347130049123B /* MapView.swift */,
 			);
 			path = "otus-ios-homework1";
 			sourceTree = "<group>";
@@ -108,9 +124,39 @@
 			isa = PBXGroup;
 			children = (
 				CB316E99267AB59D00E1E1F4 /* Router.swift */,
-				CB7B80332683453F0049123B /* MetaWeatherViewController.swift */,
+				CB7B80332683453F0049123B /* MetaWeatherViewModel.swift */,
+				CB253F3A26D58C5A00E58891 /* NewsAPIViewModel.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		CB59734826D661DC00BC0BCD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CB7B8035268347130049123B /* MapView.swift */,
+				CB59734926D6626C00BC0BCD /* NavigationController.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CB59734B26D667C800BC0BCD /* News */ = {
+			isa = PBXGroup;
+			children = (
+				CB59734426D6255D00BC0BCD /* NewsListScreen.swift */,
+				CB59734D26D667F300BC0BCD /* ArticleCellView.swift */,
+				CB59734F26D6680500BC0BCD /* ArticleDetailView.swift */,
+				CB59735126D66A4700BC0BCD /* ArticleMetaData.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		CB59734C26D667DF00BC0BCD /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				CB316E9E267AB71300E1E1F4 /* CityListScreen.swift */,
+				CB7B802E26833CF00049123B /* CityDetailScreen.swift */,
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 		CB60615A2684E25200C1526A /* Extensions */ = {
@@ -118,6 +164,8 @@
 			children = (
 				CB60615B2684E26F00C1526A /* Location+Identifiable.swift */,
 				CB60615D2684E5EB00C1526A /* Location+coordinates.swift */,
+				CB59734226D61F9700BC0BCD /* Article+Identifiable.swift */,
+				CB59734626D6289E00BC0BCD /* Collection.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -146,8 +194,8 @@
 			);
 			name = "otus-ios-homework1";
 			packageProductDependencies = (
-				CBB1DCB42684E146006E20C0 /* Networking */,
-				CB63F06A2684E1E3006F2917 /* AnyCodable */,
+				CB253F3C26D58FF500E58891 /* MetaweatherAPI */,
+				CB253F3E26D58FF500E58891 /* NewsAPI */,
 			);
 			productName = "otus-ios-homework1";
 			productReference = CB316E86267AB58A00E1E1F4 /* otus-ios-homework1.app */;
@@ -177,7 +225,6 @@
 			);
 			mainGroup = CB316E7D267AB58A00E1E1F4;
 			packageReferences = (
-				CB63F0692684E1E3006F2917 /* XCRemoteSwiftPackageReference "AnyCodable" */,
 			);
 			productRefGroup = CB316E87267AB58A00E1E1F4 /* Products */;
 			projectDirPath = "";
@@ -207,16 +254,24 @@
 			files = (
 				CB60615E2684E5EB00C1526A /* Location+coordinates.swift in Sources */,
 				CB316E8C267AB58A00E1E1F4 /* ContentView.swift in Sources */,
+				CB253F3B26D58C5A00E58891 /* NewsAPIViewModel.swift in Sources */,
+				CB59734526D6255D00BC0BCD /* NewsListScreen.swift in Sources */,
 				CB316E9A267AB59D00E1E1F4 /* Router.swift in Sources */,
+				CB59734A26D6626C00BC0BCD /* NavigationController.swift in Sources */,
+				CB59734326D61F9700BC0BCD /* Article+Identifiable.swift in Sources */,
 				CB60615C2684E26F00C1526A /* Location+Identifiable.swift in Sources */,
+				CB59734726D6289E00BC0BCD /* Collection.swift in Sources */,
+				CB59734E26D667F300BC0BCD /* ArticleCellView.swift in Sources */,
 				CB7B8036268347130049123B /* MapView.swift in Sources */,
 				CB316E8A267AB58A00E1E1F4 /* otus_ios_homework1App.swift in Sources */,
 				CB316E9F267AB71300E1E1F4 /* CityListScreen.swift in Sources */,
 				CB316EA1267AB7AB00E1E1F4 /* NowScreen.swift in Sources */,
 				CB7B802F26833CF00049123B /* CityDetailScreen.swift in Sources */,
+				CB59735026D6680500BC0BCD /* ArticleDetailView.swift in Sources */,
 				CB316E9C267AB5D700E1E1F4 /* AboutScreen.swift in Sources */,
+				CB59735226D66A4700BC0BCD /* ArticleMetaData.swift in Sources */,
 				CB316EA3267AB85400E1E1F4 /* LicensesScreen.swift in Sources */,
-				CB7B80342683453F0049123B /* MetaWeatherViewController.swift in Sources */,
+				CB7B80342683453F0049123B /* MetaWeatherViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,26 +461,14 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		CB63F0692684E1E3006F2917 /* XCRemoteSwiftPackageReference "AnyCodable" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Flight-School/AnyCodable";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		CB63F06A2684E1E3006F2917 /* AnyCodable */ = {
+		CB253F3C26D58FF500E58891 /* MetaweatherAPI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CB63F0692684E1E3006F2917 /* XCRemoteSwiftPackageReference "AnyCodable" */;
-			productName = AnyCodable;
+			productName = MetaweatherAPI;
 		};
-		CBB1DCB42684E146006E20C0 /* Networking */ = {
+		CB253F3E26D58FF500E58891 /* NewsAPI */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Networking;
+			productName = NewsAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
