@@ -9,6 +9,89 @@ tags:
 - name: weather
   description: weather
 paths:
+  /location/{woeid}/{year}/{month}/{day}:
+    get:
+      tags:
+      - location request for the date
+      summary: Retrieve location weather for the date
+      operationId: getLocationForDate
+      parameters:
+        - in: path
+          name: woeid
+          schema:
+            type: integer
+          required: true
+          description: Numeric ID of the location
+          example: 1591691
+        - in: path
+          name: year
+          schema:
+            type: integer
+          required: true
+          example: 2021
+        - in: path
+          name: month
+          schema:
+            type: integer
+          required: true
+          example: 4
+        - in: path
+          name: day
+          schema:
+            type: integer
+          required: true
+          example: 31
+      responses:
+        "200":
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Location'
+        "404":
+          description: not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelError'
+  /location/{woeid}:
+    get:
+      tags:
+      - location request
+      summary: Retrieve Location
+      operationId: getLocation
+      parameters:
+        - in: path
+          name: woeid
+          schema:
+            type: integer
+          required: true
+          description: Numeric ID of the location
+          examples: 
+            countries:
+              value: 24865670
+              summary: Request countries
+            cities:
+              value: 23424942
+              summary: Request cities
+            city:
+              value: 1591691
+              summary: Request one city
+      responses:
+        "200":
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Location'
+        "404":
+          description: not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelError'
   /location/search/:
     get:
       tags:
@@ -42,9 +125,11 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/LocationList'
+                type: array
+                items:
+                  $ref: '#/components/schemas/Location'
         default:
-          description: enexpected error
+          description: unexpected error
           content:
             text/plain:
               schema:
@@ -52,15 +137,109 @@ paths:
                 example: pong
 components:
   schemas:
-    LocationList:
-      type: array
-      items:
-        $ref: '#/components/schemas/Location'
+    ModelError:
+      type: object
+      properties:
+        detail:
+          type: string
+          example: Not found
+    WeatherSource:
+      type: object
+      properties:
+        title:
+          type: string
+        slug:
+          type: string
+        url:
+          type: string
+          format: uri
+        crawl_rate:
+          type: number
+    WeatherState:
+      type: string
+      enum:
+        - Snow
+        - Sleet
+        - Hail
+        - Thunderstorm
+        - Heavy Rain
+        - Light Rain
+        - Showers
+        - Heavy Cloud
+        - Light Cloud
+        - Clear
+    WeatherStateAbbreviation:
+      type: string
+      enum:
+        - sn
+        - sl
+        - h
+        - t
+        - hr
+        - lr
+        - s
+        - hc
+        - lc
+        - c
+    LocationType:
+      type: string
+      enum:
+        - Continent
+        - Country
+        - City
+        - Region / State / Province
+    LocationWeather:
+      type: object
+      properties:
+        id:
+          type: string
+        weather_state_name:
+          $ref: "#/components/schemas/WeatherState"
+        weather_state_abbr:
+          $ref: "#/components/schemas/WeatherStateAbbreviation"
+        wind_direction_compass:
+          type: string
+        created:
+          type: string
+          format: date-time
+        applicable_date:
+          type: string
+          format: date
+        min_temp:
+          type: number
+        max_temp:
+          type: number
+        the_temp:
+          type: number
+        win_speed:
+          type: number
+        win_Direction:
+          type: number
+        air_pressure:
+          type: number
+        humidity:
+          type: number
+        visibility:
+          type: number
+        predictability:
+          type: number
+    LocationParent:
+      type: object
+      properties:
+        title:
+          type: string
+        location_type:
+          $ref: "#/components/schemas/LocationType"
+        woeid:
+          type: integer
+        latt_long:
+          type: string
     Location:
       required:
       - title
       - woeid
       - latt_long
+      - location_type
       type: object
       properties:
         distance:
@@ -70,6 +249,33 @@ components:
         woeid:
           type: integer
         location_type:
-          type: string
+          $ref: "#/components/schemas/LocationType"
         latt_long:
           type: string
+        time:
+          type: string
+          format: date-time
+        sun_rise:
+          type: string
+          format: date-time
+        sun_set:
+          type: string
+          format: date-time
+        timezone_name:
+          type: string
+        parent:
+          $ref: "#/components/schemas/LocationParent"
+        timezone:
+          type: string
+        sources:
+          type: array
+          items:
+            $ref: "#/components/schemas/WeatherSource"
+        consolidated_weather:
+          type: array
+          items:
+            $ref: "#/components/schemas/LocationWeather"
+        children:
+          type: array
+          items:
+            $ref: "#/components/schemas/LocationParent"
