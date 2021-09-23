@@ -19,7 +19,7 @@ let topics = [
 ]
 
 struct NewsListScreen: View {
-    @EnvironmentObject var news: NewsAPIViewModel
+    @ObservedObject var news: NewsAPIViewModel = .init()
     @State var topic: Int = 0
     
     var list: some View  {

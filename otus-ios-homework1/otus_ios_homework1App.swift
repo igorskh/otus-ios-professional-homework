@@ -9,12 +9,15 @@ import SwiftUI
 
 @main
 struct otus_ios_homework1App: App {
+    init() {
+        ServiceLocator.shared.add(
+            service: NewsAPIService(token: "86346ae4bf054d819cc1d938a0ba75d7")
+        )
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(Router())
-                .environmentObject(MetaWeatherViewModel())
-                .environmentObject(NewsAPIViewModel())
         }
     }
 }
