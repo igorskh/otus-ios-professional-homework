@@ -1,5 +1,5 @@
 #!/bin/sh
-API_LIST=("metaweather" "newsapi")
+API_LIST=("newsapi")
 SWIFT_MODULE_SRC="Modules/Networking/Sources"
 
 for a in ${API_LIST[@]}; do
