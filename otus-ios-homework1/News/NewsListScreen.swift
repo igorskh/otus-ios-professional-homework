@@ -8,19 +8,9 @@
 import SwiftUI
 import NewsAPI
 
-struct TopicChoice {
-    var topic: String
-}
-
-let topics = [
-    TopicChoice(topic: "WWDC"),
-    TopicChoice(topic: "Food"),
-    TopicChoice(topic: "Health")
-]
-
 struct NewsListScreen: View {
     @ObservedObject var news: NewsAPIViewModel = .init()
-    @State var topic: Int = 0
+    @State var showNewTopicForm: Bool = false
     
     var list: some View  {
         List(news.articles) { article  in
@@ -31,20 +21,53 @@ struct NewsListScreen: View {
         }
     }
     
+    var topicsView: some View {
+        HStack {
+            Text("Topic:")
+            Picker("Topic", selection: $news.topicIndex) {
+                if news.topics.count == 0 {
+                   Text("No topics")
+                        .tag(-1)
+                } else {
+                    ForEach(0..<news.topics.count, id: \.self) {
+                        Text(news.topics[$0])
+                            .tag($0)
+                    }
+                }
+            }
+            .disabled(news.topics.count == 0)
+            .pickerStyle(DefaultPickerStyle())
+            
+            Spacer()
+            
+            Button(action: {
+                news.removeTopic(name: news.topics[news.topicIndex])
+            }) {
+                Image(systemName: "trash.circle")
+                    .font(.title3)
+            }.disabled(news.topics.count == 0)
+            
+            Button(action: {
+                showNewTopicForm.toggle()
+            }) {
+                Image(systemName: "plus.circle")
+                    .font(.title3)
+            }
+            .sheet(isPresented: $showNewTopicForm) {
+                AddNewTopicView()
+                    .environmentObject(news)
+            }
+        }
+        .padding(.horizontal)
+    }
+    
     var body: some View {
         NavControllerView {
             VStack  {
                 Text("News")
                     .font(.title)
-                Picker("Topic", selection: $topic) {
-                    ForEach(0..<topics.count, id: \.self) {
-                        Text(topics[$0].topic)
-                            .tag($0)
-                    }
-                    .onChange(of: topic) {
-                        news.setTopic(to: topics[$0].topic)
-                    }
-                }.pickerStyle(SegmentedPickerStyle())
+                
+                topicsView
                 
                 if news.isPageLoading && news.articles.isEmpty {
                     ProgressView()
@@ -54,9 +77,23 @@ struct NewsListScreen: View {
                 
                 if news.lastError != "" {
                     Text(news.lastError)
+                        .foregroundColor(.red)
                 }
                 
-                list
+                
+                if news.topicIndex < 0 {
+                    Text("Select topic")
+                        .font(.title3)
+                }
+                
+                if #available(iOS 15.0, *) {
+                    list
+                        .refreshable {
+                            await news.reload()
+                        }
+                } else {
+                    list
+                }
             }
         }
     }

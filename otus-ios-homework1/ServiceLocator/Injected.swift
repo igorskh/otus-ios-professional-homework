@@ -17,9 +17,4 @@ struct Injected<Service> {
         get { return service }
         mutating set { service = newValue }
     }
-    
-    public var projectedValue: Injected<Service> {
-        get { return self }
-        mutating set { self = newValue }
-    }
 }

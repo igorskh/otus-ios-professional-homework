@@ -22,6 +22,15 @@ struct ArticleMetaData: View {
     
     var body: some View {
         VStack {
+            HStack {
+                Button(action: { navigationController.pop() }) {
+                    Image(systemName: "arrow.backward")
+                }
+                .padding(.vertical)
+                
+                Spacer()
+            }
+            
             Text(article.title ?? "No title")
                 .font(.title)
                 .padding(.bottom)
@@ -29,13 +38,10 @@ struct ArticleMetaData: View {
             tableRow(title: "Author", text: article.author)
             tableRow(title: "Published at", text: article.publishedAt)
             
-            Button(action: { navigationController.pop() }) {
-                Text("Back")
-            }.padding(.vertical)
-            
             Button(action: { navigationController.pop(to: .root) }) {
-                Text("Root")
+                Text("To the list")
             }
+            .padding(.vertical)
             
             Spacer()
         }

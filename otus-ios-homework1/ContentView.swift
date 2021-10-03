@@ -25,6 +25,13 @@ struct ContentView: View {
                 }
                 .tag(3)
         }
+        .onAppear {
+            // https://www.reddit.com/r/SwiftUI/comments/p8obef/comment/hdqjc0a/
+            if #available(iOS 15.0, *) {
+                let appearance = UITabBarAppearance()
+                UITabBar.appearance().scrollEdgeAppearance = appearance
+            }
+        }
     }
 }
 

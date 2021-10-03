@@ -13,7 +13,7 @@ class NewsAPIService {
         sortBy: ArticleSort.publishedat,
         language: "en"
     )
-    private var pageSize: Int = 10
+    private var pageSize: Int = 15
     private var page: Int = 0
     private var apiToken: String
     
@@ -21,13 +21,33 @@ class NewsAPIService {
         apiToken = token
     }
     
-    func setTopic(to newTopic: String) {
+    func setTopic(to newTopic: String) -> Bool {
         guard queryParams.query != newTopic else {
-            return
+            return false
         }
         queryParams.query = newTopic
         
         page = 0
+        return true
+    }
+    
+    func setPage(page: Int = 0) {
+        self.page = page
+    }
+    
+    @available(iOS 15.0.0, *)
+    func loadPage() async throws -> [Article] {
+        try await withCheckedThrowingContinuation { continuation in
+            page += 1
+            loadPage { result in
+                switch result {
+                case .success(let articles):
+                    continuation.resume(returning: articles)
+                case .failure(let error):
+                    continuation.resume(throwing: error)
+                }
+            }
+        }
     }
     
     func loadPage(onResult: @escaping (Result<[Article], CustomError>) -> Void) {

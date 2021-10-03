@@ -13,6 +13,9 @@ struct otus_ios_homework1App: App {
         ServiceLocator.shared.add(
             service: NewsAPIService(token: "86346ae4bf054d819cc1d938a0ba75d7")
         )
+        ServiceLocator.shared.add(
+            service: NewsTopicsService()
+        )
     }
     
     var body: some Scene {

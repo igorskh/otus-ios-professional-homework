@@ -28,6 +28,9 @@
 		CB59735026D6680500BC0BCD /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59734F26D6680500BC0BCD /* ArticleDetailView.swift */; };
 		CB59735226D66A4700BC0BCD /* ArticleMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59735126D66A4700BC0BCD /* ArticleMetaData.swift */; };
 		CB7B8036268347130049123B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B8035268347130049123B /* MapView.swift */; };
+		CB804BE726FDFF7200A43FD9 /* NewsTopicsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB804BE626FDFF7200A43FD9 /* NewsTopicsService.swift */; };
+		CB804BE926FE02E700A43FD9 /* UserDefaultsEncoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB804BE826FE02E700A43FD9 /* UserDefaultsEncoded.swift */; };
+		CB804BEB2701DC2400A43FD9 /* AddNewTopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB804BEA2701DC2400A43FD9 /* AddNewTopicView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		CB59734F26D6680500BC0BCD /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
 		CB59735126D66A4700BC0BCD /* ArticleMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleMetaData.swift; sourceTree = "<group>"; };
 		CB7B8035268347130049123B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		CB804BE626FDFF7200A43FD9 /* NewsTopicsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTopicsService.swift; sourceTree = "<group>"; };
+		CB804BE826FE02E700A43FD9 /* UserDefaultsEncoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsEncoded.swift; sourceTree = "<group>"; };
+		CB804BEA2701DC2400A43FD9 /* AddNewTopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTopicView.swift; sourceTree = "<group>"; };
 		CBB1DCB22684E104006E20C0 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = text; name = Networking; path = Modules/Networking; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -118,6 +124,7 @@
 			children = (
 				CB253F3A26D58C5A00E58891 /* NewsAPIViewModel.swift */,
 				CB39CF9A26FCC2070078F692 /* NewsAPIService.swift */,
+				CB804BE626FDFF7200A43FD9 /* NewsTopicsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -149,6 +156,7 @@
 				CB59735126D66A4700BC0BCD /* ArticleMetaData.swift */,
 				CB39CF8D26FCA5E30078F692 /* ArticleQueryParams.swift */,
 				CB39CF8F26FCA5FF0078F692 /* CustomError.swift */,
+				CB804BEA2701DC2400A43FD9 /* AddNewTopicView.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -158,6 +166,7 @@
 			children = (
 				CB59734226D61F9700BC0BCD /* Article+Identifiable.swift */,
 				CB59734626D6289E00BC0BCD /* Collection.swift */,
+				CB804BE826FE02E700A43FD9 /* UserDefaultsEncoded.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -244,14 +253,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB39CF9426FCA9BD0078F692 /* NavigationController.swift in Sources */,
+				CB804BE926FE02E700A43FD9 /* UserDefaultsEncoded.swift in Sources */,
 				CB316E8C267AB58A00E1E1F4 /* ContentView.swift in Sources */,
 				CB253F3B26D58C5A00E58891 /* NewsAPIViewModel.swift in Sources */,
 				CB39CF8C26FC96F40078F692 /* Injected.swift in Sources */,
 				CB59734526D6255D00BC0BCD /* NewsListScreen.swift in Sources */,
 				CB39CF8A26FC956E0078F692 /* ServiceLocator.swift in Sources */,
+				CB804BEB2701DC2400A43FD9 /* AddNewTopicView.swift in Sources */,
 				CB59734326D61F9700BC0BCD /* Article+Identifiable.swift in Sources */,
 				CB39CF9B26FCC2070078F692 /* NewsAPIService.swift in Sources */,
 				CB59734726D6289E00BC0BCD /* Collection.swift in Sources */,
+				CB804BE726FDFF7200A43FD9 /* NewsTopicsService.swift in Sources */,
 				CB59734E26D667F300BC0BCD /* ArticleCellView.swift in Sources */,
 				CB7B8036268347130049123B /* MapView.swift in Sources */,
 				CB316E8A267AB58A00E1E1F4 /* otus_ios_homework1App.swift in Sources */,

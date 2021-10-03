@@ -14,6 +14,14 @@ struct ArticleDetailView: View {
     
     var body: some View {
         VStack {
+            HStack {
+                Button(action: {navigationController.pop()}) {
+                    Image(systemName: "arrow.backward")
+                }.padding(.vertical)
+                
+                Spacer()
+            }
+            
             Text(article.title ?? "")
                 .font(.title)
             Text(article.description ?? "")
@@ -26,10 +34,6 @@ struct ArticleDetailView: View {
             }) {
                 Text("Meta data")
             }
-            
-            Button(action: {navigationController.pop()}) {
-                Text("Back")
-            }.padding(.vertical)
             
             Spacer()
         }
