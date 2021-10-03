@@ -19,20 +19,24 @@ class NewsAPIViewModel: ObservableObject {
     @Published private(set) var articles: [Article] = .init()
     @Published private(set) var isPageLoading: Bool = false
     @Published private(set) var topics: [String] = []
-    @Published var topicIndex: Int = -1 {
-        didSet {
-            if topicIndex < 0 || topicIndex >= topics.count  {
-                setTopic(to: "")
-                return
-            }
-            setTopic(to: topics[topicIndex])
-            topicsService.topicIndex = topicIndex
+    
+    init() {
+        topicsService.$topicIndex.sink { newTopicIndex in
+            let newTopic = self.topicsService.topics?[newTopicIndex] ?? ""
+            self.setTopic(to: newTopic)
+        }
+        .store(in: &cancellables)
+    }
+    
+    deinit {
+        cancellables.forEach { cancellable in
+            cancellable.cancel()
         }
     }
     
     @available(iOS 15.0.0, *)
     func reload() async {
-        guard !isPageLoading && topicIndex >= 0 else {
+        guard !isPageLoading else {
             return
         }
         newsService.setPage(page: 0)
@@ -52,7 +56,7 @@ class NewsAPIViewModel: ObservableObject {
     }
     
     func loadPage() {
-        guard !isPageLoading && topicIndex >= 0 else {
+        guard !isPageLoading else {
             return
         }
         lastError = ""
@@ -67,44 +71,6 @@ class NewsAPIViewModel: ObservableObject {
             }
             self.isPageLoading = false
         }
-    }
-    
-    init() {
-        topicsService.$topics.sink { newTopics in
-            guard let newTopics = newTopics else {
-                return
-            }
-            self.topics = newTopics
-            
-            if self.topicIndex < 0 {
-                self.topicIndex = self.topicsService.topicIndex
-                
-                if newTopics.isEmpty {
-                    self.addTopic(name: "WWDC")
-                }
-            }
-        }
-        .store(in: &cancellables)
-    }
-    
-    deinit {
-        cancellables.forEach { cancellable in
-            cancellable.cancel()
-        }
-    }
-    
-    func addTopic(name: String) {
-        let index = topicsService.addTopic(name: name)
-        
-        DispatchQueue.main.async {
-            self.topicIndex = index
-        }
-    }
-    
-    func removeTopic(name: String) {
-        topicsService.removeTopic(name: name)
-        
-        topicIndex = topics.count - 1
     }
     
     func setTopic(to newTopic: String) {

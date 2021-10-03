@@ -9,47 +9,25 @@ import Foundation
 
 class NewsTopicsService {
     @UserDefaultsEncoded(key: "topics")
-    private var storedTopics: [String]? {
-        didSet {
-            topics = storedTopics ?? []
-        }
-    }
+    private var storedTopics: [String]?
     
     @UserDefaultsEncoded(key: "topicIndex")
     private var storedTopicIndex: Int?
     
-    @Published public var topics: [String]?
-    public var topicIndex: Int {
-        get {
-            storedTopicIndex ?? 0
+    var topics: [String]? {
+        didSet {
+            storedTopics = topics
         }
-        set {
-            storedTopicIndex = newValue
+    }
+    
+    @Published public var topicIndex: Int = 0 {
+        didSet {
+            storedTopicIndex = topicIndex
         }
     }
     
     init() {
+        topicIndex = storedTopicIndex ?? 0
         topics = storedTopics ?? []
-    }
-    
-    public func addTopic(name: String) -> Int {
-        var topics = storedTopics ?? []
-        
-        if let index = topics.firstIndex(of: name) {
-            return index
-        }
-        
-        topics.append(name)
-        storedTopics = topics
-        return topics.count - 1
-    }
-    
-    public func removeTopic(name: String) {
-        var topics = storedTopics ?? []
-        
-        topics.removeAll { value in
-            value == name
-        }
-        storedTopics = topics
     }
 }

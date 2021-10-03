@@ -1,10 +1,8 @@
-# OTUS iOS Developer. Professional. Homework Repo
+# OTUS iOS Developer. Professional. Week 8 Homework
 
-## Features
+Application uses [NewsAPI](https://newsapi.org). [OpenAPI description](newsapi.yaml) is created manually for code generation.
 
-Application uses [MetaWeather API](https://www.metaweather.com/api/). [OpenAPI description](metaweather.yaml) is created manually for code generation.
-
-Application shows list of cities according to the filter.
+Service are initialised in `otus-ios-homework1/otus_ios_homework1App.swift`. You might need to use your own NewsAPI token there.
 
 ## Generate API Client (optionally)
 ```bash

@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct AddNewTopicView: View {
-    @EnvironmentObject var news: NewsAPIViewModel
+    @EnvironmentObject var topics: NewsTopicsViewModel
     @Environment(\.presentationMode) var presentationMode
     @State var newTopicLabel: String = ""
 
@@ -19,7 +19,7 @@ struct AddNewTopicView: View {
             Section {
                 Button(action: {
                     if newTopicLabel.count > 0 {
-                        news.addTopic(name: newTopicLabel)
+                        topics.addTopic(name: newTopicLabel)
                         presentationMode.wrappedValue.dismiss()
                     }
                 }) {
