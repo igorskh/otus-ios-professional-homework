@@ -10,28 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        TabView {
-            NewsListScreen()
-                .tabItem {
-                    Image(systemName: "newspaper")
-                    Text("News")
-                }
-                .tag(2)
-            
-            AboutScreen()
-                .tabItem {
-                    Image(systemName: "info.circle")
-                    Text("About")
-                }
-                .tag(3)
-        }
-        .onAppear {
-            // https://www.reddit.com/r/SwiftUI/comments/p8obef/comment/hdqjc0a/
-            if #available(iOS 15.0, *) {
-                let appearance = UITabBarAppearance()
-                UITabBar.appearance().scrollEdgeAppearance = appearance
-            }
-        }
+        NewsListScreen()
     }
 }
 
