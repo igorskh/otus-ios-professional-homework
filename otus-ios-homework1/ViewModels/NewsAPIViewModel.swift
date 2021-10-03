@@ -22,8 +22,10 @@ class NewsAPIViewModel: ObservableObject {
     
     init() {
         topicsService.$topicIndex.sink { newTopicIndex in
-            let newTopic = self.topicsService.topics?[newTopicIndex] ?? ""
-            self.setTopic(to: newTopic)
+            if newTopicIndex > -1 {
+                let newTopic = self.topicsService.topics?[newTopicIndex] ?? ""
+                self.setTopic(to: newTopic)
+            }
         }
         .store(in: &cancellables)
     }

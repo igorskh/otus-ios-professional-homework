@@ -20,14 +20,17 @@ class NewsTopicsService {
         }
     }
     
-    @Published public var topicIndex: Int = 0 {
+    @Published public var topicIndex: Int = -1 {
         didSet {
             storedTopicIndex = topicIndex
         }
     }
     
     init() {
-        topicIndex = storedTopicIndex ?? 0
         topics = storedTopics ?? []
+        topicIndex = storedTopicIndex ?? -1
+        if topicIndex == -1 && topics!.count > 0 {
+            topicIndex = 0
+        }
     }
 }

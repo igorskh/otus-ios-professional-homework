@@ -14,15 +14,17 @@ class NewsTopicsViewModel: ObservableObject {
     @Published private(set) var topics: [String] = []
     @Published var topicIndex: Int = -1 {
         willSet {
-            if topicIndex > -1 {
-                topicsService.topicIndex = newValue
-            }
+            topicsService.topicIndex = newValue
         }
     }
     
     init() {
         topics = topicsService.topics ?? []
         topicIndex = topicsService.topicIndex
+        
+        if topics.count == 0 {
+            addTopic(name: "apple")
+        }
     }
     
     func addTopic(name: String) {
