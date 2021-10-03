@@ -1,6 +1,6 @@
 //
-//  suffixstats.swift
-//  suffixstats
+//  SuffixStatsWidget.swift
+//  SuffixStatsWidget
 //
 //  Created by Igor Kim on 03.10.21.
 //
@@ -40,30 +40,33 @@ struct SimpleEntry: TimelineEntry {
     let configuration: ConfigurationIntent
 }
 
-struct suffixstatsEntryView : View {
+struct SuffixStatsWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        Text(entry.date, style: .time)
+        VStack {
+            Text(entry.date, style: .time)
+            Text("Hello OTUS")
+        }
     }
 }
 
 @main
-struct suffixstats: Widget {
-    let kind: String = "suffixstats"
+struct SuffixStatsWidget: Widget {
+    let kind: String = "SuffixStatsWidget"
 
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
-            suffixstatsEntryView(entry: entry)
+            SuffixStatsWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Suffix Counter Widget")
+        .description("Show words suffix statistics")
     }
 }
 
-struct suffixstats_Previews: PreviewProvider {
+struct SuffixStatsWidget_Previews: PreviewProvider {
     static var previews: some View {
-        suffixstatsEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+        SuffixStatsWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

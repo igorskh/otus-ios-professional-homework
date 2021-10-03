@@ -7,26 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB18F3E8270A256D004DBEDF /* SuffixSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18F3E7270A256D004DBEDF /* SuffixSequence.swift */; };
 		CBB6DEF6270A1EBD00043BCE /* otus_ios_homeworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB6DEF5270A1EBD00043BCE /* otus_ios_homeworkApp.swift */; };
 		CBB6DEF8270A1EBD00043BCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB6DEF7270A1EBD00043BCE /* ContentView.swift */; };
 		CBB6DEFA270A1EC000043BCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB6DEF9270A1EC000043BCE /* Assets.xcassets */; };
 		CBB6DEFD270A1EC000043BCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB6DEFC270A1EC000043BCE /* Preview Assets.xcassets */; };
-		CBB6DF0A270A1FE500043BCE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB6DF09270A1FE500043BCE /* WidgetKit.framework */; };
-		CBB6DF0C270A1FE500043BCE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB6DF0B270A1FE500043BCE /* SwiftUI.framework */; };
-		CBB6DF0F270A1FE500043BCE /* suffixstats.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB6DF0E270A1FE500043BCE /* suffixstats.swift */; };
-		CBB6DF12270A1FE700043BCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB6DF11270A1FE700043BCE /* Assets.xcassets */; };
-		CBB6DF14270A1FE700043BCE /* suffixstats.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CBB6DF10270A1FE500043BCE /* suffixstats.intentdefinition */; };
-		CBB6DF15270A1FE700043BCE /* suffixstats.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CBB6DF10270A1FE500043BCE /* suffixstats.intentdefinition */; };
-		CBB6DF18270A1FE700043BCE /* suffixstatsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CBB6DF07270A1FE500043BCE /* suffixstatsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CBB6DF22270A206E00043BCE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB6DF09270A1FE500043BCE /* WidgetKit.framework */; };
+		CBB6DF23270A206E00043BCE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB6DF0B270A1FE500043BCE /* SwiftUI.framework */; };
+		CBB6DF26270A206E00043BCE /* SuffixStatsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB6DF25270A206E00043BCE /* SuffixStatsWidget.swift */; };
+		CBB6DF29270A207000043BCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB6DF28270A207000043BCE /* Assets.xcassets */; };
+		CBB6DF2B270A207000043BCE /* SuffixStatsWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CBB6DF27270A206E00043BCE /* SuffixStatsWidget.intentdefinition */; };
+		CBB6DF2C270A207000043BCE /* SuffixStatsWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CBB6DF27270A206E00043BCE /* SuffixStatsWidget.intentdefinition */; };
+		CBB6DF2F270A207000043BCE /* SuffixStatsWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CBB6DF21270A206E00043BCE /* SuffixStatsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CBB6DF16270A1FE700043BCE /* PBXContainerItemProxy */ = {
+		CBB6DF2D270A207000043BCE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CBB6DEEA270A1EBD00043BCE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CBB6DF06270A1FE500043BCE;
-			remoteInfo = suffixstatsExtension;
+			remoteGlobalIDString = CBB6DF20270A206E00043BCE;
+			remoteInfo = SuffixStatsWidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -37,7 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				CBB6DF18270A1FE700043BCE /* suffixstatsExtension.appex in Embed App Extensions */,
+				CBB6DF2F270A207000043BCE /* SuffixStatsWidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,18 +46,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CB18F3E7270A256D004DBEDF /* SuffixSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixSequence.swift; sourceTree = "<group>"; };
 		CBB6DEF2270A1EBD00043BCE /* otus-ios-homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "otus-ios-homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB6DEF5270A1EBD00043BCE /* otus_ios_homeworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otus_ios_homeworkApp.swift; sourceTree = "<group>"; };
 		CBB6DEF7270A1EBD00043BCE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CBB6DEF9270A1EC000043BCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBB6DEFC270A1EC000043BCE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CBB6DF07270A1FE500043BCE /* suffixstatsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = suffixstatsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB6DF09270A1FE500043BCE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		CBB6DF0B270A1FE500043BCE /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		CBB6DF0E270A1FE500043BCE /* suffixstats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suffixstats.swift; sourceTree = "<group>"; };
-		CBB6DF10270A1FE500043BCE /* suffixstats.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = suffixstats.intentdefinition; sourceTree = "<group>"; };
-		CBB6DF11270A1FE700043BCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CBB6DF13270A1FE700043BCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB6DF21270A206E00043BCE /* SuffixStatsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SuffixStatsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB6DF25270A206E00043BCE /* SuffixStatsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixStatsWidget.swift; sourceTree = "<group>"; };
+		CBB6DF27270A206E00043BCE /* SuffixStatsWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SuffixStatsWidget.intentdefinition; sourceTree = "<group>"; };
+		CBB6DF28270A207000043BCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBB6DF2A270A207000043BCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +69,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBB6DF04270A1FE500043BCE /* Frameworks */ = {
+		CBB6DF1E270A206E00043BCE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBB6DF0C270A1FE500043BCE /* SwiftUI.framework in Frameworks */,
-				CBB6DF0A270A1FE500043BCE /* WidgetKit.framework in Frameworks */,
+				CBB6DF23270A206E00043BCE /* SwiftUI.framework in Frameworks */,
+				CBB6DF22270A206E00043BCE /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				CBB6DEF4270A1EBD00043BCE /* otus-ios-homework */,
-				CBB6DF0D270A1FE500043BCE /* suffixstats */,
+				CBB6DF24270A206E00043BCE /* SuffixStatsWidget */,
 				CBB6DF08270A1FE500043BCE /* Frameworks */,
 				CBB6DEF3270A1EBD00043BCE /* Products */,
 			);
@@ -93,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				CBB6DEF2270A1EBD00043BCE /* otus-ios-homework.app */,
-				CBB6DF07270A1FE500043BCE /* suffixstatsExtension.appex */,
+				CBB6DF21270A206E00043BCE /* SuffixStatsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +107,7 @@
 				CBB6DEF7270A1EBD00043BCE /* ContentView.swift */,
 				CBB6DEF9270A1EC000043BCE /* Assets.xcassets */,
 				CBB6DEFB270A1EC000043BCE /* Preview Content */,
+				CB18F3E7270A256D004DBEDF /* SuffixSequence.swift */,
 			);
 			path = "otus-ios-homework";
 			sourceTree = "<group>";
@@ -126,15 +129,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CBB6DF0D270A1FE500043BCE /* suffixstats */ = {
+		CBB6DF24270A206E00043BCE /* SuffixStatsWidget */ = {
 			isa = PBXGroup;
 			children = (
-				CBB6DF0E270A1FE500043BCE /* suffixstats.swift */,
-				CBB6DF10270A1FE500043BCE /* suffixstats.intentdefinition */,
-				CBB6DF11270A1FE700043BCE /* Assets.xcassets */,
-				CBB6DF13270A1FE700043BCE /* Info.plist */,
+				CBB6DF25270A206E00043BCE /* SuffixStatsWidget.swift */,
+				CBB6DF27270A206E00043BCE /* SuffixStatsWidget.intentdefinition */,
+				CBB6DF28270A207000043BCE /* Assets.xcassets */,
+				CBB6DF2A270A207000043BCE /* Info.plist */,
 			);
-			path = suffixstats;
+			path = SuffixStatsWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,28 +155,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				CBB6DF17270A1FE700043BCE /* PBXTargetDependency */,
+				CBB6DF2E270A207000043BCE /* PBXTargetDependency */,
 			);
 			name = "otus-ios-homework";
 			productName = "otus-ios-homework";
 			productReference = CBB6DEF2270A1EBD00043BCE /* otus-ios-homework.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CBB6DF06270A1FE500043BCE /* suffixstatsExtension */ = {
+		CBB6DF20270A206E00043BCE /* SuffixStatsWidgetExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBB6DF1C270A1FE700043BCE /* Build configuration list for PBXNativeTarget "suffixstatsExtension" */;
+			buildConfigurationList = CBB6DF30270A207000043BCE /* Build configuration list for PBXNativeTarget "SuffixStatsWidgetExtension" */;
 			buildPhases = (
-				CBB6DF03270A1FE500043BCE /* Sources */,
-				CBB6DF04270A1FE500043BCE /* Frameworks */,
-				CBB6DF05270A1FE500043BCE /* Resources */,
+				CBB6DF1D270A206E00043BCE /* Sources */,
+				CBB6DF1E270A206E00043BCE /* Frameworks */,
+				CBB6DF1F270A206E00043BCE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = suffixstatsExtension;
-			productName = suffixstatsExtension;
-			productReference = CBB6DF07270A1FE500043BCE /* suffixstatsExtension.appex */;
+			name = SuffixStatsWidgetExtension;
+			productName = SuffixStatsWidgetExtension;
+			productReference = CBB6DF21270A206E00043BCE /* SuffixStatsWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -189,7 +192,7 @@
 					CBB6DEF1270A1EBD00043BCE = {
 						CreatedOnToolsVersion = 13.0;
 					};
-					CBB6DF06270A1FE500043BCE = {
+					CBB6DF20270A206E00043BCE = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
@@ -208,7 +211,7 @@
 			projectRoot = "";
 			targets = (
 				CBB6DEF1270A1EBD00043BCE /* otus-ios-homework */,
-				CBB6DF06270A1FE500043BCE /* suffixstatsExtension */,
+				CBB6DF20270A206E00043BCE /* SuffixStatsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -223,11 +226,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBB6DF05270A1FE500043BCE /* Resources */ = {
+		CBB6DF1F270A206E00043BCE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBB6DF12270A1FE700043BCE /* Assets.xcassets in Resources */,
+				CBB6DF29270A207000043BCE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,28 +241,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBB6DF2C270A207000043BCE /* SuffixStatsWidget.intentdefinition in Sources */,
+				CB18F3E8270A256D004DBEDF /* SuffixSequence.swift in Sources */,
 				CBB6DEF8270A1EBD00043BCE /* ContentView.swift in Sources */,
 				CBB6DEF6270A1EBD00043BCE /* otus_ios_homeworkApp.swift in Sources */,
-				CBB6DF15270A1FE700043BCE /* suffixstats.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBB6DF03270A1FE500043BCE /* Sources */ = {
+		CBB6DF1D270A206E00043BCE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBB6DF0F270A1FE500043BCE /* suffixstats.swift in Sources */,
-				CBB6DF14270A1FE700043BCE /* suffixstats.intentdefinition in Sources */,
+				CBB6DF26270A206E00043BCE /* SuffixStatsWidget.swift in Sources */,
+				CBB6DF2B270A207000043BCE /* SuffixStatsWidget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CBB6DF17270A1FE700043BCE /* PBXTargetDependency */ = {
+		CBB6DF2E270A207000043BCE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CBB6DF06270A1FE500043BCE /* suffixstatsExtension */;
-			targetProxy = CBB6DF16270A1FE700043BCE /* PBXContainerItemProxy */;
+			target = CBB6DF20270A206E00043BCE /* SuffixStatsWidgetExtension */;
+			targetProxy = CBB6DF2D270A207000043BCE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -442,7 +446,7 @@
 			};
 			name = Release;
 		};
-		CBB6DF1A270A1FE700043BCE /* Debug */ = {
+		CBB6DF31270A207000043BCE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,8 +455,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P3VKCDARX4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = suffixstats/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = suffixstats;
+				INFOPLIST_FILE = SuffixStatsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SuffixStatsWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -460,7 +464,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-homework.suffixstats";
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-homework.SuffixStatsWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -469,7 +473,7 @@
 			};
 			name = Debug;
 		};
-		CBB6DF1B270A1FE700043BCE /* Release */ = {
+		CBB6DF32270A207000043BCE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -478,8 +482,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P3VKCDARX4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = suffixstats/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = suffixstats;
+				INFOPLIST_FILE = SuffixStatsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SuffixStatsWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -487,7 +491,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-homework.suffixstats";
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-homework.SuffixStatsWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -517,11 +521,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBB6DF1C270A1FE700043BCE /* Build configuration list for PBXNativeTarget "suffixstatsExtension" */ = {
+		CBB6DF30270A207000043BCE /* Build configuration list for PBXNativeTarget "SuffixStatsWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CBB6DF1A270A1FE700043BCE /* Debug */,
-				CBB6DF1B270A1FE700043BCE /* Release */,
+				CBB6DF31270A207000043BCE /* Debug */,
+				CBB6DF32270A207000043BCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

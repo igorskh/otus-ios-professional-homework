@@ -8,9 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var text: String = ""
+    @State var words: [String] = []
+    
+    func submitText() {
+        SuffixSequence(string: text).forEach {
+            print($0)
+        }
+        words.append(text)
+        
+        text = ""
+    }
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            HStack {
+                TextField("Enter a word", text: $text, onCommit: { submitText() })
+                Button {
+                    submitText()
+                } label: { Image(systemName: "plus").font(.title2) }
+            }
+            Spacer()
+            List {
+                ForEach(words, id: \.self) {
+                    Text($0)
+                }
+            }
+        }
+        .padding()
     }
 }
 
