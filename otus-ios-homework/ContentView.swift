@@ -7,35 +7,40 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
-    @State var text: String = ""
-    @State var words: [String] = []
+    @ObservedObject var suffixCounter: SuffixCounterService = .init()
     
-    func submitText() {
-        SuffixSequence(string: text).forEach {
-            print($0)
-        }
-        words.append(text)
-        
-        text = ""
-    }
+    @State var selectedTab = 0
+    
     
     var body: some View {
-        VStack {
-            HStack {
-                TextField("Enter a word", text: $text, onCommit: { submitText() })
-                Button {
-                    submitText()
-                } label: { Image(systemName: "plus").font(.title2) }
-            }
-            Spacer()
-            List {
-                ForEach(words, id: \.self) {
-                    Text($0)
+        TabView(selection: $selectedTab) {
+            AddWordScreen()
+                .environmentObject(suffixCounter)
+                .tabItem {
+                    Image(systemName: "text.badge.plus")
+                    Text("Words")
                 }
+                .tag(0)
+            
+            StatsScreen()
+                .environmentObject(suffixCounter)
+                .tabItem {
+                    Image(systemName: "chart.bar.xaxis")
+                    Text("Counts")
+                }
+                .tag(1)
+        }
+        .onOpenURL {
+            print($0)
+            switch $0.absoluteString {
+            case "stats":
+                selectedTab = 1
+            default:
+                selectedTab = 0
             }
         }
-        .padding()
     }
 }
 

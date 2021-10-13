@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CB18F3E8270A256D004DBEDF /* SuffixSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18F3E7270A256D004DBEDF /* SuffixSequence.swift */; };
+		CB18F3F5271747AE004DBEDF /* AddWordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18F3F4271747AE004DBEDF /* AddWordScreen.swift */; };
+		CB18F3F7271747C4004DBEDF /* SuffixCounterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18F3F6271747C4004DBEDF /* SuffixCounterService.swift */; };
+		CB18F3F927174898004DBEDF /* StatsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18F3F827174898004DBEDF /* StatsScreen.swift */; };
+		CB3824E72717563F0022E3DA /* SuffixCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3824E62717563F0022E3DA /* SuffixCount.swift */; };
+		CB3824E8271756570022E3DA /* SuffixCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3824E62717563F0022E3DA /* SuffixCount.swift */; };
 		CBB6DEF6270A1EBD00043BCE /* otus_ios_homeworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB6DEF5270A1EBD00043BCE /* otus_ios_homeworkApp.swift */; };
 		CBB6DEF8270A1EBD00043BCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB6DEF7270A1EBD00043BCE /* ContentView.swift */; };
 		CBB6DEFA270A1EC000043BCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB6DEF9270A1EC000043BCE /* Assets.xcassets */; };
@@ -47,6 +52,12 @@
 
 /* Begin PBXFileReference section */
 		CB18F3E7270A256D004DBEDF /* SuffixSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixSequence.swift; sourceTree = "<group>"; };
+		CB18F3F2271738C8004DBEDF /* otus-ios-homework.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "otus-ios-homework.entitlements"; sourceTree = "<group>"; };
+		CB18F3F327173DD4004DBEDF /* SuffixStatsWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SuffixStatsWidgetExtension.entitlements; sourceTree = "<group>"; };
+		CB18F3F4271747AE004DBEDF /* AddWordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordScreen.swift; sourceTree = "<group>"; };
+		CB18F3F6271747C4004DBEDF /* SuffixCounterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixCounterService.swift; sourceTree = "<group>"; };
+		CB18F3F827174898004DBEDF /* StatsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsScreen.swift; sourceTree = "<group>"; };
+		CB3824E62717563F0022E3DA /* SuffixCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixCount.swift; sourceTree = "<group>"; };
 		CBB6DEF2270A1EBD00043BCE /* otus-ios-homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "otus-ios-homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB6DEF5270A1EBD00043BCE /* otus_ios_homeworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otus_ios_homeworkApp.swift; sourceTree = "<group>"; };
 		CBB6DEF7270A1EBD00043BCE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,9 +92,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB3824E5271756280022E3DA /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CB3824E62717563F0022E3DA /* SuffixCount.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		CBB6DEE9270A1EBD00043BCE = {
 			isa = PBXGroup;
 			children = (
+				CB3824E5271756280022E3DA /* Shared */,
+				CB18F3F327173DD4004DBEDF /* SuffixStatsWidgetExtension.entitlements */,
 				CBB6DEF4270A1EBD00043BCE /* otus-ios-homework */,
 				CBB6DF24270A206E00043BCE /* SuffixStatsWidget */,
 				CBB6DF08270A1FE500043BCE /* Frameworks */,
@@ -103,11 +124,15 @@
 		CBB6DEF4270A1EBD00043BCE /* otus-ios-homework */ = {
 			isa = PBXGroup;
 			children = (
+				CB18F3F2271738C8004DBEDF /* otus-ios-homework.entitlements */,
 				CBB6DEF5270A1EBD00043BCE /* otus_ios_homeworkApp.swift */,
 				CBB6DEF7270A1EBD00043BCE /* ContentView.swift */,
 				CBB6DEF9270A1EC000043BCE /* Assets.xcassets */,
 				CBB6DEFB270A1EC000043BCE /* Preview Content */,
 				CB18F3E7270A256D004DBEDF /* SuffixSequence.swift */,
+				CB18F3F4271747AE004DBEDF /* AddWordScreen.swift */,
+				CB18F3F6271747C4004DBEDF /* SuffixCounterService.swift */,
+				CB18F3F827174898004DBEDF /* StatsScreen.swift */,
 			);
 			path = "otus-ios-homework";
 			sourceTree = "<group>";
@@ -241,9 +266,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB18F3F927174898004DBEDF /* StatsScreen.swift in Sources */,
 				CBB6DF2C270A207000043BCE /* SuffixStatsWidget.intentdefinition in Sources */,
+				CB3824E72717563F0022E3DA /* SuffixCount.swift in Sources */,
+				CB18F3F7271747C4004DBEDF /* SuffixCounterService.swift in Sources */,
 				CB18F3E8270A256D004DBEDF /* SuffixSequence.swift in Sources */,
 				CBB6DEF8270A1EBD00043BCE /* ContentView.swift in Sources */,
+				CB18F3F5271747AE004DBEDF /* AddWordScreen.swift in Sources */,
 				CBB6DEF6270A1EBD00043BCE /* otus_ios_homeworkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +283,7 @@
 			files = (
 				CBB6DF26270A206E00043BCE /* SuffixStatsWidget.swift in Sources */,
 				CBB6DF2B270A207000043BCE /* SuffixStatsWidget.intentdefinition in Sources */,
+				CB3824E8271756570022E3DA /* SuffixCount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +420,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "otus-ios-homework/otus-ios-homework.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"otus-ios-homework/Preview Content\"";
@@ -421,6 +452,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "otus-ios-homework/otus-ios-homework.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"otus-ios-homework/Preview Content\"";
@@ -451,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SuffixStatsWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P3VKCDARX4;
@@ -478,6 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SuffixStatsWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P3VKCDARX4;
