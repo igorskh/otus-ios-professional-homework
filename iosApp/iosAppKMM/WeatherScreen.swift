@@ -27,14 +27,15 @@ struct WeatherScreen: View {
                 }
             }
             Text("Found \(viewModel.locations.count)")
-            Spacer()
-            
+            if viewModel.errorText != "" {
+                Text("Error: \(viewModel.errorText)")
+                    .foregroundColor(.red)
+            }
             List {
                 ForEach(viewModel.locations, id: \.self.title) {
                     Text($0.title)
                 }
             }
-            
         }
     }
 }
