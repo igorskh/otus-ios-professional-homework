@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBBC8823273B0F1000B9F6CA /* CatsAndDogsClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CBBC8822273B0F1000B9F6CA /* CatsAndDogsClassifier.mlmodel */; };
+		CBBC8824273B0F1000B9F6CA /* CatsAndDogsClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CBBC8822273B0F1000B9F6CA /* CatsAndDogsClassifier.mlmodel */; };
+		CBBC8826273B0FAB00B9F6CA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC8825273B0FAB00B9F6CA /* ImagePicker.swift */; };
+		CBBC8827273B0FAB00B9F6CA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC8825273B0FAB00B9F6CA /* ImagePicker.swift */; };
+		CBBC8829273B12D600B9F6CA /* UIImage+toCVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC8828273B12D600B9F6CA /* UIImage+toCVPixelBuffer.swift */; };
+		CBBC882A273B12D600B9F6CA /* UIImage+toCVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC8828273B12D600B9F6CA /* UIImage+toCVPixelBuffer.swift */; };
+		CBBC882C273B130100B9F6CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC882B273B130100B9F6CA /* ViewController.swift */; };
+		CBBC882D273B130100B9F6CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC882B273B130100B9F6CA /* ViewController.swift */; };
+		CBC37EC2273B0B8700FE9E6C /* otus_ios_professionalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC37EB2273B0B8500FE9E6C /* otus_ios_professionalApp.swift */; };
+		CBC37EC3273B0B8700FE9E6C /* otus_ios_professionalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC37EB2273B0B8500FE9E6C /* otus_ios_professionalApp.swift */; };
+		CBC37EC4273B0B8700FE9E6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC37EB3273B0B8500FE9E6C /* ContentView.swift */; };
+		CBC37EC5273B0B8700FE9E6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC37EB3273B0B8500FE9E6C /* ContentView.swift */; };
+		CBC37EC6273B0B8700FE9E6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC37EB4273B0B8700FE9E6C /* Assets.xcassets */; };
+		CBC37EC7273B0B8700FE9E6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC37EB4273B0B8700FE9E6C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CBBC8822273B0F1000B9F6CA /* CatsAndDogsClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CatsAndDogsClassifier.mlmodel; sourceTree = "<group>"; };
+		CBBC8825273B0FAB00B9F6CA /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		CBBC8828273B12D600B9F6CA /* UIImage+toCVPixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+toCVPixelBuffer.swift"; sourceTree = "<group>"; };
+		CBBC882B273B130100B9F6CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBC37EB2273B0B8500FE9E6C /* otus_ios_professionalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otus_ios_professionalApp.swift; sourceTree = "<group>"; };
+		CBC37EB3273B0B8500FE9E6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CBC37EB4273B0B8700FE9E6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBC37EB9273B0B8700FE9E6C /* otus-ios-professional.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "otus-ios-professional.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC37EBF273B0B8700FE9E6C /* otus-ios-professional.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "otus-ios-professional.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC37EC1273B0B8700FE9E6C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBC37EB6273B0B8700FE9E6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC37EBC273B0B8700FE9E6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBC37EAC273B0B8500FE9E6C = {
+			isa = PBXGroup;
+			children = (
+				CBC37EB1273B0B8500FE9E6C /* Shared */,
+				CBC37EC0273B0B8700FE9E6C /* macOS */,
+				CBC37EBA273B0B8700FE9E6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBC37EB1273B0B8500FE9E6C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CBC37EB2273B0B8500FE9E6C /* otus_ios_professionalApp.swift */,
+				CBBC8822273B0F1000B9F6CA /* CatsAndDogsClassifier.mlmodel */,
+				CBC37EB3273B0B8500FE9E6C /* ContentView.swift */,
+				CBC37EB4273B0B8700FE9E6C /* Assets.xcassets */,
+				CBBC8825273B0FAB00B9F6CA /* ImagePicker.swift */,
+				CBBC8828273B12D600B9F6CA /* UIImage+toCVPixelBuffer.swift */,
+				CBBC882B273B130100B9F6CA /* ViewController.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CBC37EBA273B0B8700FE9E6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBC37EB9273B0B8700FE9E6C /* otus-ios-professional.app */,
+				CBC37EBF273B0B8700FE9E6C /* otus-ios-professional.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBC37EC0273B0B8700FE9E6C /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBC37EC1273B0B8700FE9E6C /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBC37EB8273B0B8700FE9E6C /* otus-ios-professional (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBC37ECA273B0B8700FE9E6C /* Build configuration list for PBXNativeTarget "otus-ios-professional (iOS)" */;
+			buildPhases = (
+				CBC37EB5273B0B8700FE9E6C /* Sources */,
+				CBC37EB6273B0B8700FE9E6C /* Frameworks */,
+				CBC37EB7273B0B8700FE9E6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "otus-ios-professional (iOS)";
+			productName = "otus-ios-professional (iOS)";
+			productReference = CBC37EB9273B0B8700FE9E6C /* otus-ios-professional.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBC37EBE273B0B8700FE9E6C /* otus-ios-professional (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBC37ECD273B0B8700FE9E6C /* Build configuration list for PBXNativeTarget "otus-ios-professional (macOS)" */;
+			buildPhases = (
+				CBC37EBB273B0B8700FE9E6C /* Sources */,
+				CBC37EBC273B0B8700FE9E6C /* Frameworks */,
+				CBC37EBD273B0B8700FE9E6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "otus-ios-professional (macOS)";
+			productName = "otus-ios-professional (macOS)";
+			productReference = CBC37EBF273B0B8700FE9E6C /* otus-ios-professional.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBC37EAD273B0B8500FE9E6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					CBC37EB8273B0B8700FE9E6C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					CBC37EBE273B0B8700FE9E6C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = CBC37EB0273B0B8500FE9E6C /* Build configuration list for PBXProject "otus-ios-professional" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBC37EAC273B0B8500FE9E6C;
+			productRefGroup = CBC37EBA273B0B8700FE9E6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBC37EB8273B0B8700FE9E6C /* otus-ios-professional (iOS) */,
+				CBC37EBE273B0B8700FE9E6C /* otus-ios-professional (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBC37EB7273B0B8700FE9E6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC37EC6273B0B8700FE9E6C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC37EBD273B0B8700FE9E6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC37EC7273B0B8700FE9E6C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBC37EB5273B0B8700FE9E6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBC882C273B130100B9F6CA /* ViewController.swift in Sources */,
+				CBBC8823273B0F1000B9F6CA /* CatsAndDogsClassifier.mlmodel in Sources */,
+				CBBC8826273B0FAB00B9F6CA /* ImagePicker.swift in Sources */,
+				CBBC8829273B12D600B9F6CA /* UIImage+toCVPixelBuffer.swift in Sources */,
+				CBC37EC4273B0B8700FE9E6C /* ContentView.swift in Sources */,
+				CBC37EC2273B0B8700FE9E6C /* otus_ios_professionalApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC37EBB273B0B8700FE9E6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBC882D273B130100B9F6CA /* ViewController.swift in Sources */,
+				CBBC8824273B0F1000B9F6CA /* CatsAndDogsClassifier.mlmodel in Sources */,
+				CBBC8827273B0FAB00B9F6CA /* ImagePicker.swift in Sources */,
+				CBBC882A273B12D600B9F6CA /* UIImage+toCVPixelBuffer.swift in Sources */,
+				CBC37EC5273B0B8700FE9E6C /* ContentView.swift in Sources */,
+				CBC37EC3273B0B8700FE9E6C /* otus_ios_professionalApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CBC37EC8273B0B8700FE9E6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBC37EC9273B0B8700FE9E6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		CBC37ECB273B0B8700FE9E6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-professional";
+				PRODUCT_NAME = "otus-ios-professional";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBC37ECC273B0B8700FE9E6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-professional";
+				PRODUCT_NAME = "otus-ios-professional";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBC37ECE273B0B8700FE9E6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-professional";
+				PRODUCT_NAME = "otus-ios-professional";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CBC37ECF273B0B8700FE9E6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-professional";
+				PRODUCT_NAME = "otus-ios-professional";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBC37EB0273B0B8500FE9E6C /* Build configuration list for PBXProject "otus-ios-professional" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC37EC8273B0B8700FE9E6C /* Debug */,
+				CBC37EC9273B0B8700FE9E6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBC37ECA273B0B8700FE9E6C /* Build configuration list for PBXNativeTarget "otus-ios-professional (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC37ECB273B0B8700FE9E6C /* Debug */,
+				CBC37ECC273B0B8700FE9E6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBC37ECD273B0B8700FE9E6C /* Build configuration list for PBXNativeTarget "otus-ios-professional (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC37ECE273B0B8700FE9E6C /* Debug */,
+				CBC37ECF273B0B8700FE9E6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBC37EAD273B0B8500FE9E6C /* Project object */;
+}
