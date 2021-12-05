@@ -1,0 +1,1202 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBAEBB3E275D4DA300D2DB2E /* otus_ios_professionalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEBB2E275D4DA100D2DB2E /* otus_ios_professionalApp.swift */; };
+		CBAEBB3F275D4DA300D2DB2E /* otus_ios_professionalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEBB2E275D4DA100D2DB2E /* otus_ios_professionalApp.swift */; };
+		CBAEBB40275D4DA300D2DB2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEBB2F275D4DA100D2DB2E /* ContentView.swift */; };
+		CBAEBB41275D4DA300D2DB2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEBB2F275D4DA100D2DB2E /* ContentView.swift */; };
+		CBAEBB42275D4DA300D2DB2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAEBB30275D4DA300D2DB2E /* Assets.xcassets */; };
+		CBAEBB43275D4DA300D2DB2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAEBB30275D4DA300D2DB2E /* Assets.xcassets */; };
+		CBAEBB52275D506E00D2DB2E /* otus-ios-professional-watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CBAEBB51275D506E00D2DB2E /* otus-ios-professional-watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CBAEBB5D275D507000D2DB2E /* otus-ios-professional-watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CBAEBB5C275D507000D2DB2E /* otus-ios-professional-watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CBAEBB7E275D514000D2DB2E /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEBB7D275D514000D2DB2E /* SettingsScreen.swift */; };
+		CBAEBB7F275D514000D2DB2E /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEBB7D275D514000D2DB2E /* SettingsScreen.swift */; };
+		CBAEBB83275D517900D2DB2E /* PlayScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEBB82275D517900D2DB2E /* PlayScreen.swift */; };
+		CBAEBB84275D517900D2DB2E /* PlayScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEBB82275D517900D2DB2E /* PlayScreen.swift */; };
+		CBAEBB87275D518200D2DB2E /* LeaderboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEBB86275D518200D2DB2E /* LeaderboardScreen.swift */; };
+		CBAEBB88275D518200D2DB2E /* LeaderboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEBB86275D518200D2DB2E /* LeaderboardScreen.swift */; };
+		CBAEBB8B275D521000D2DB2E /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEBB8A275D521000D2DB2E /* GameService.swift */; };
+		CBAEBB8C275D521000D2DB2E /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEBB8A275D521000D2DB2E /* GameService.swift */; };
+		CBAEBB94275D5D1200D2DB2E /* otus-ios-watchapp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CBAEBB93275D5D1200D2DB2E /* otus-ios-watchapp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CBAEBB99275D5D1300D2DB2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAEBB98275D5D1300D2DB2E /* Assets.xcassets */; };
+		CBAEBB9F275D5D1300D2DB2E /* otus-ios-watchapp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CBAEBB9E275D5D1300D2DB2E /* otus-ios-watchapp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CBAEBBA6275D5D1300D2DB2E /* otus_ios_professionalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEBBA5275D5D1300D2DB2E /* otus_ios_professionalApp.swift */; };
+		CBAEBBA8275D5D1300D2DB2E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEBBA7275D5D1300D2DB2E /* ComplicationController.swift */; };
+		CBAEBBAA275D5D1400D2DB2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAEBBA9275D5D1400D2DB2E /* Assets.xcassets */; };
+		CBAEBBAD275D5D1400D2DB2E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAEBBAC275D5D1400D2DB2E /* Preview Assets.xcassets */; };
+		CBAEBBBA275D5D3400D2DB2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEBB2F275D4DA100D2DB2E /* ContentView.swift */; };
+		CBAEBBBB275D5D4A00D2DB2E /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEBB7D275D514000D2DB2E /* SettingsScreen.swift */; };
+		CBAEBBBC275D5D4C00D2DB2E /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEBB8A275D521000D2DB2E /* GameService.swift */; };
+		CBAEBBBD275D5D4F00D2DB2E /* LeaderboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEBB86275D518200D2DB2E /* LeaderboardScreen.swift */; };
+		CBAEBBBE275D5D5200D2DB2E /* PlayScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEBB82275D517900D2DB2E /* PlayScreen.swift */; };
+		CBF15317275D6C9100B21756 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF15313275D6C4200B21756 /* CustomButton.swift */; };
+		CBF15319275D6D1600B21756 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF15318275D6D1600B21756 /* CustomButton.swift */; };
+		CBF1531A275D6D1600B21756 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF15318275D6D1600B21756 /* CustomButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBAEBB53275D506E00D2DB2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBAEBB29275D4DA100D2DB2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBAEBB50275D506E00D2DB2E;
+			remoteInfo = "otus-ios-professional-watch WatchKit App";
+		};
+		CBAEBB5E275D507000D2DB2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBAEBB29275D4DA100D2DB2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBAEBB5B275D507000D2DB2E;
+			remoteInfo = "otus-ios-professional-watch WatchKit Extension";
+		};
+		CBAEBB95275D5D1200D2DB2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBAEBB29275D4DA100D2DB2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBAEBB92275D5D1200D2DB2E;
+			remoteInfo = "otus-ios-watchapp WatchKit App";
+		};
+		CBAEBBA0275D5D1300D2DB2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBAEBB29275D4DA100D2DB2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBAEBB9D275D5D1300D2DB2E;
+			remoteInfo = "otus-ios-watchapp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CBAEBB74275D507100D2DB2E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CBAEBB52275D506E00D2DB2E /* otus-ios-professional-watch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAEBB77275D507100D2DB2E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CBAEBB5D275D507000D2DB2E /* otus-ios-professional-watch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAEBBB2275D5D1400D2DB2E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CBAEBB9F275D5D1300D2DB2E /* otus-ios-watchapp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAEBBB6275D5D1400D2DB2E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CBAEBB94275D5D1200D2DB2E /* otus-ios-watchapp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CBAEBB2E275D4DA100D2DB2E /* otus_ios_professionalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otus_ios_professionalApp.swift; sourceTree = "<group>"; };
+		CBAEBB2F275D4DA100D2DB2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CBAEBB30275D4DA300D2DB2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBAEBB35275D4DA300D2DB2E /* otus-ios-professional.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "otus-ios-professional.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAEBB3B275D4DA300D2DB2E /* otus-ios-professional.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "otus-ios-professional.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAEBB3D275D4DA300D2DB2E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		CBAEBB4E275D506E00D2DB2E /* otus-ios-professional-watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "otus-ios-professional-watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAEBB51275D506E00D2DB2E /* otus-ios-professional-watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "otus-ios-professional-watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAEBB5C275D507000D2DB2E /* otus-ios-professional-watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "otus-ios-professional-watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAEBB7D275D514000D2DB2E /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		CBAEBB82275D517900D2DB2E /* PlayScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayScreen.swift; sourceTree = "<group>"; };
+		CBAEBB86275D518200D2DB2E /* LeaderboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardScreen.swift; sourceTree = "<group>"; };
+		CBAEBB8A275D521000D2DB2E /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
+		CBAEBB90275D5D1100D2DB2E /* otus-ios-watchapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "otus-ios-watchapp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAEBB93275D5D1200D2DB2E /* otus-ios-watchapp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "otus-ios-watchapp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAEBB98275D5D1300D2DB2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBAEBB9E275D5D1300D2DB2E /* otus-ios-watchapp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "otus-ios-watchapp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAEBBA5275D5D1300D2DB2E /* otus_ios_professionalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otus_ios_professionalApp.swift; sourceTree = "<group>"; };
+		CBAEBBA7275D5D1300D2DB2E /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		CBAEBBA9275D5D1400D2DB2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBAEBBAC275D5D1400D2DB2E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CBAEBBAE275D5D1400D2DB2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF15313275D6C4200B21756 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		CBF15318275D6D1600B21756 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBAEBB32275D4DA300D2DB2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAEBB38275D4DA300D2DB2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAEBB59275D507000D2DB2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAEBB9B275D5D1300D2DB2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBAEBB28275D4DA100D2DB2E = {
+			isa = PBXGroup;
+			children = (
+				CBAEBB2D275D4DA100D2DB2E /* Shared */,
+				CBAEBB3C275D4DA300D2DB2E /* macOS */,
+				CBAEBB97275D5D1200D2DB2E /* otus-ios-watchapp WatchKit App */,
+				CBAEBBA2275D5D1300D2DB2E /* otus-ios-watchapp WatchKit Extension */,
+				CBAEBB36275D4DA300D2DB2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBAEBB2D275D4DA100D2DB2E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CBAEBB7D275D514000D2DB2E /* SettingsScreen.swift */,
+				CBAEBB2E275D4DA100D2DB2E /* otus_ios_professionalApp.swift */,
+				CBAEBB2F275D4DA100D2DB2E /* ContentView.swift */,
+				CBAEBB30275D4DA300D2DB2E /* Assets.xcassets */,
+				CBAEBB82275D517900D2DB2E /* PlayScreen.swift */,
+				CBAEBB86275D518200D2DB2E /* LeaderboardScreen.swift */,
+				CBAEBB8A275D521000D2DB2E /* GameService.swift */,
+				CBF15318275D6D1600B21756 /* CustomButton.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CBAEBB36275D4DA300D2DB2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBAEBB35275D4DA300D2DB2E /* otus-ios-professional.app */,
+				CBAEBB3B275D4DA300D2DB2E /* otus-ios-professional.app */,
+				CBAEBB4E275D506E00D2DB2E /* otus-ios-professional-watch.app */,
+				CBAEBB51275D506E00D2DB2E /* otus-ios-professional-watch WatchKit App.app */,
+				CBAEBB5C275D507000D2DB2E /* otus-ios-professional-watch WatchKit Extension.appex */,
+				CBAEBB90275D5D1100D2DB2E /* otus-ios-watchapp.app */,
+				CBAEBB93275D5D1200D2DB2E /* otus-ios-watchapp WatchKit App.app */,
+				CBAEBB9E275D5D1300D2DB2E /* otus-ios-watchapp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBAEBB3C275D4DA300D2DB2E /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBAEBB3D275D4DA300D2DB2E /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		CBAEBB97275D5D1200D2DB2E /* otus-ios-watchapp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				CBAEBB98275D5D1300D2DB2E /* Assets.xcassets */,
+			);
+			path = "otus-ios-watchapp WatchKit App";
+			sourceTree = "<group>";
+		};
+		CBAEBBA2275D5D1300D2DB2E /* otus-ios-watchapp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CBF15313275D6C4200B21756 /* CustomButton.swift */,
+				CBAEBBA5275D5D1300D2DB2E /* otus_ios_professionalApp.swift */,
+				CBAEBBA7275D5D1300D2DB2E /* ComplicationController.swift */,
+				CBAEBBA9275D5D1400D2DB2E /* Assets.xcassets */,
+				CBAEBBAE275D5D1400D2DB2E /* Info.plist */,
+				CBAEBBAB275D5D1400D2DB2E /* Preview Content */,
+			);
+			path = "otus-ios-watchapp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		CBAEBBAB275D5D1400D2DB2E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CBAEBBAC275D5D1400D2DB2E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBAEBB34275D4DA300D2DB2E /* otus-ios-professional (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBAEBB46275D4DA300D2DB2E /* Build configuration list for PBXNativeTarget "otus-ios-professional (iOS)" */;
+			buildPhases = (
+				CBAEBB31275D4DA300D2DB2E /* Sources */,
+				CBAEBB32275D4DA300D2DB2E /* Frameworks */,
+				CBAEBB33275D4DA300D2DB2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "otus-ios-professional (iOS)";
+			productName = "otus-ios-professional (iOS)";
+			productReference = CBAEBB35275D4DA300D2DB2E /* otus-ios-professional.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBAEBB3A275D4DA300D2DB2E /* otus-ios-professional (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBAEBB49275D4DA300D2DB2E /* Build configuration list for PBXNativeTarget "otus-ios-professional (macOS)" */;
+			buildPhases = (
+				CBAEBB37275D4DA300D2DB2E /* Sources */,
+				CBAEBB38275D4DA300D2DB2E /* Frameworks */,
+				CBAEBB39275D4DA300D2DB2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "otus-ios-professional (macOS)";
+			productName = "otus-ios-professional (macOS)";
+			productReference = CBAEBB3B275D4DA300D2DB2E /* otus-ios-professional.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBAEBB4D275D506E00D2DB2E /* otus-ios-professional-watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBAEBB7C275D507100D2DB2E /* Build configuration list for PBXNativeTarget "otus-ios-professional-watch" */;
+			buildPhases = (
+				CBAEBB4C275D506E00D2DB2E /* Resources */,
+				CBAEBB74275D507100D2DB2E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBAEBB54275D506E00D2DB2E /* PBXTargetDependency */,
+			);
+			name = "otus-ios-professional-watch";
+			productName = "otus-ios-professional-watch";
+			productReference = CBAEBB4E275D506E00D2DB2E /* otus-ios-professional-watch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		CBAEBB50275D506E00D2DB2E /* otus-ios-professional-watch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBAEBB7B275D507100D2DB2E /* Build configuration list for PBXNativeTarget "otus-ios-professional-watch WatchKit App" */;
+			buildPhases = (
+				CBAEBB4F275D506E00D2DB2E /* Resources */,
+				CBAEBB77275D507100D2DB2E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBAEBB5F275D507000D2DB2E /* PBXTargetDependency */,
+			);
+			name = "otus-ios-professional-watch WatchKit App";
+			productName = "otus-ios-professional-watch WatchKit App";
+			productReference = CBAEBB51275D506E00D2DB2E /* otus-ios-professional-watch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CBAEBB5B275D507000D2DB2E /* otus-ios-professional-watch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBAEBB7A275D507100D2DB2E /* Build configuration list for PBXNativeTarget "otus-ios-professional-watch WatchKit Extension" */;
+			buildPhases = (
+				CBAEBB58275D507000D2DB2E /* Sources */,
+				CBAEBB59275D507000D2DB2E /* Frameworks */,
+				CBAEBB5A275D507000D2DB2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "otus-ios-professional-watch WatchKit Extension";
+			productName = "otus-ios-professional-watch WatchKit Extension";
+			productReference = CBAEBB5C275D507000D2DB2E /* otus-ios-professional-watch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		CBAEBB8F275D5D1100D2DB2E /* otus-ios-watchapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBAEBBB7275D5D1400D2DB2E /* Build configuration list for PBXNativeTarget "otus-ios-watchapp" */;
+			buildPhases = (
+				CBAEBB8E275D5D1100D2DB2E /* Resources */,
+				CBAEBBB6275D5D1400D2DB2E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBAEBB96275D5D1200D2DB2E /* PBXTargetDependency */,
+			);
+			name = "otus-ios-watchapp";
+			productName = "otus-ios-watchapp";
+			productReference = CBAEBB90275D5D1100D2DB2E /* otus-ios-watchapp.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		CBAEBB92275D5D1200D2DB2E /* otus-ios-watchapp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBAEBBB3275D5D1400D2DB2E /* Build configuration list for PBXNativeTarget "otus-ios-watchapp WatchKit App" */;
+			buildPhases = (
+				CBAEBB91275D5D1200D2DB2E /* Resources */,
+				CBAEBBB2275D5D1400D2DB2E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBAEBBA1275D5D1300D2DB2E /* PBXTargetDependency */,
+			);
+			name = "otus-ios-watchapp WatchKit App";
+			productName = "otus-ios-watchapp WatchKit App";
+			productReference = CBAEBB93275D5D1200D2DB2E /* otus-ios-watchapp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CBAEBB9D275D5D1300D2DB2E /* otus-ios-watchapp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBAEBBAF275D5D1400D2DB2E /* Build configuration list for PBXNativeTarget "otus-ios-watchapp WatchKit Extension" */;
+			buildPhases = (
+				CBAEBB9A275D5D1300D2DB2E /* Sources */,
+				CBAEBB9B275D5D1300D2DB2E /* Frameworks */,
+				CBAEBB9C275D5D1300D2DB2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "otus-ios-watchapp WatchKit Extension";
+			productName = "otus-ios-watchapp WatchKit Extension";
+			productReference = CBAEBB9E275D5D1300D2DB2E /* otus-ios-watchapp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBAEBB29275D4DA100D2DB2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					CBAEBB34275D4DA300D2DB2E = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					CBAEBB3A275D4DA300D2DB2E = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					CBAEBB4D275D506E00D2DB2E = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					CBAEBB50275D506E00D2DB2E = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					CBAEBB5B275D507000D2DB2E = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					CBAEBB8F275D5D1100D2DB2E = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					CBAEBB92275D5D1200D2DB2E = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					CBAEBB9D275D5D1300D2DB2E = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = CBAEBB2C275D4DA100D2DB2E /* Build configuration list for PBXProject "otus-ios-professional" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBAEBB28275D4DA100D2DB2E;
+			productRefGroup = CBAEBB36275D4DA300D2DB2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBAEBB34275D4DA300D2DB2E /* otus-ios-professional (iOS) */,
+				CBAEBB3A275D4DA300D2DB2E /* otus-ios-professional (macOS) */,
+				CBAEBB4D275D506E00D2DB2E /* otus-ios-professional-watch */,
+				CBAEBB50275D506E00D2DB2E /* otus-ios-professional-watch WatchKit App */,
+				CBAEBB5B275D507000D2DB2E /* otus-ios-professional-watch WatchKit Extension */,
+				CBAEBB8F275D5D1100D2DB2E /* otus-ios-watchapp */,
+				CBAEBB92275D5D1200D2DB2E /* otus-ios-watchapp WatchKit App */,
+				CBAEBB9D275D5D1300D2DB2E /* otus-ios-watchapp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBAEBB33275D4DA300D2DB2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAEBB42275D4DA300D2DB2E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAEBB39275D4DA300D2DB2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAEBB43275D4DA300D2DB2E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAEBB4C275D506E00D2DB2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAEBB4F275D506E00D2DB2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAEBB5A275D507000D2DB2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAEBB8E275D5D1100D2DB2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAEBB91275D5D1200D2DB2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAEBB99275D5D1300D2DB2E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAEBB9C275D5D1300D2DB2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAEBBAD275D5D1400D2DB2E /* Preview Assets.xcassets in Resources */,
+				CBAEBBAA275D5D1400D2DB2E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBAEBB31275D4DA300D2DB2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAEBB87275D518200D2DB2E /* LeaderboardScreen.swift in Sources */,
+				CBAEBB40275D4DA300D2DB2E /* ContentView.swift in Sources */,
+				CBAEBB83275D517900D2DB2E /* PlayScreen.swift in Sources */,
+				CBAEBB8B275D521000D2DB2E /* GameService.swift in Sources */,
+				CBF15319275D6D1600B21756 /* CustomButton.swift in Sources */,
+				CBAEBB7E275D514000D2DB2E /* SettingsScreen.swift in Sources */,
+				CBAEBB3E275D4DA300D2DB2E /* otus_ios_professionalApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAEBB37275D4DA300D2DB2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAEBB88275D518200D2DB2E /* LeaderboardScreen.swift in Sources */,
+				CBAEBB41275D4DA300D2DB2E /* ContentView.swift in Sources */,
+				CBAEBB84275D517900D2DB2E /* PlayScreen.swift in Sources */,
+				CBAEBB8C275D521000D2DB2E /* GameService.swift in Sources */,
+				CBF1531A275D6D1600B21756 /* CustomButton.swift in Sources */,
+				CBAEBB7F275D514000D2DB2E /* SettingsScreen.swift in Sources */,
+				CBAEBB3F275D4DA300D2DB2E /* otus_ios_professionalApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAEBB58275D507000D2DB2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAEBB9A275D5D1300D2DB2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAEBBBE275D5D5200D2DB2E /* PlayScreen.swift in Sources */,
+				CBAEBBBB275D5D4A00D2DB2E /* SettingsScreen.swift in Sources */,
+				CBAEBBA6275D5D1300D2DB2E /* otus_ios_professionalApp.swift in Sources */,
+				CBAEBBBC275D5D4C00D2DB2E /* GameService.swift in Sources */,
+				CBF15317275D6C9100B21756 /* CustomButton.swift in Sources */,
+				CBAEBBBA275D5D3400D2DB2E /* ContentView.swift in Sources */,
+				CBAEBBA8275D5D1300D2DB2E /* ComplicationController.swift in Sources */,
+				CBAEBBBD275D5D4F00D2DB2E /* LeaderboardScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBAEBB54275D506E00D2DB2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBAEBB50275D506E00D2DB2E /* otus-ios-professional-watch WatchKit App */;
+			targetProxy = CBAEBB53275D506E00D2DB2E /* PBXContainerItemProxy */;
+		};
+		CBAEBB5F275D507000D2DB2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBAEBB5B275D507000D2DB2E /* otus-ios-professional-watch WatchKit Extension */;
+			targetProxy = CBAEBB5E275D507000D2DB2E /* PBXContainerItemProxy */;
+		};
+		CBAEBB96275D5D1200D2DB2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBAEBB92275D5D1200D2DB2E /* otus-ios-watchapp WatchKit App */;
+			targetProxy = CBAEBB95275D5D1200D2DB2E /* PBXContainerItemProxy */;
+		};
+		CBAEBBA1275D5D1300D2DB2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBAEBB9D275D5D1300D2DB2E /* otus-ios-watchapp WatchKit Extension */;
+			targetProxy = CBAEBBA0275D5D1300D2DB2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CBAEBB44275D4DA300D2DB2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBAEBB45275D4DA300D2DB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		CBAEBB47275D4DA300D2DB2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-professional";
+				PRODUCT_NAME = "otus-ios-professional";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBAEBB48275D4DA300D2DB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-professional";
+				PRODUCT_NAME = "otus-ios-professional";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBAEBB4A275D4DA300D2DB2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-professional";
+				PRODUCT_NAME = "otus-ios-professional";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CBAEBB4B275D4DA300D2DB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-professional";
+				PRODUCT_NAME = "otus-ios-professional";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CBAEBB72275D507100D2DB2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-professional-watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CBAEBB73275D507100D2DB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-professional-watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBAEBB75275D507100D2DB2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = otus_ios_professional_watch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "otus-ios-professional-watch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-professional-watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		CBAEBB76275D507100D2DB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = otus_ios_professional_watch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "otus-ios-professional-watch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-professional-watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		CBAEBB78275D507100D2DB2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"otus-ios-professional-watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "otus-ios-professional-watch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "otus-ios-professional-watch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-professional-watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		CBAEBB79275D507100D2DB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"otus-ios-professional-watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "otus-ios-professional-watch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "otus-ios-professional-watch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-professional-watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		CBAEBBB0275D5D1400D2DB2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"otus-ios-watchapp WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "otus-ios-watchapp WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "otus-ios-watchapp WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-watchapp.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		CBAEBBB1275D5D1400D2DB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"otus-ios-watchapp WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "otus-ios-watchapp WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "otus-ios-watchapp WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-watchapp.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		CBAEBBB4275D5D1400D2DB2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = otus_ios_watchapp_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "otus-ios-watchapp WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-watchapp.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		CBAEBBB5275D5D1400D2DB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = otus_ios_watchapp_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "otus-ios-watchapp WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-watchapp.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		CBAEBBB8275D5D1400D2DB2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-watchapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CBAEBBB9275D5D1400D2DB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.otus-ios-watchapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBAEBB2C275D4DA100D2DB2E /* Build configuration list for PBXProject "otus-ios-professional" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAEBB44275D4DA300D2DB2E /* Debug */,
+				CBAEBB45275D4DA300D2DB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBAEBB46275D4DA300D2DB2E /* Build configuration list for PBXNativeTarget "otus-ios-professional (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAEBB47275D4DA300D2DB2E /* Debug */,
+				CBAEBB48275D4DA300D2DB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBAEBB49275D4DA300D2DB2E /* Build configuration list for PBXNativeTarget "otus-ios-professional (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAEBB4A275D4DA300D2DB2E /* Debug */,
+				CBAEBB4B275D4DA300D2DB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBAEBB7A275D507100D2DB2E /* Build configuration list for PBXNativeTarget "otus-ios-professional-watch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAEBB78275D507100D2DB2E /* Debug */,
+				CBAEBB79275D507100D2DB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBAEBB7B275D507100D2DB2E /* Build configuration list for PBXNativeTarget "otus-ios-professional-watch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAEBB75275D507100D2DB2E /* Debug */,
+				CBAEBB76275D507100D2DB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBAEBB7C275D507100D2DB2E /* Build configuration list for PBXNativeTarget "otus-ios-professional-watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAEBB72275D507100D2DB2E /* Debug */,
+				CBAEBB73275D507100D2DB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBAEBBAF275D5D1400D2DB2E /* Build configuration list for PBXNativeTarget "otus-ios-watchapp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAEBBB0275D5D1400D2DB2E /* Debug */,
+				CBAEBBB1275D5D1400D2DB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBAEBBB3275D5D1400D2DB2E /* Build configuration list for PBXNativeTarget "otus-ios-watchapp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAEBBB4275D5D1400D2DB2E /* Debug */,
+				CBAEBBB5275D5D1400D2DB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBAEBBB7275D5D1400D2DB2E /* Build configuration list for PBXNativeTarget "otus-ios-watchapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAEBBB8275D5D1400D2DB2E /* Debug */,
+				CBAEBBB9275D5D1400D2DB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBAEBB29275D4DA100D2DB2E /* Project object */;
+}
